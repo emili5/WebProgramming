@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>overflow 프로퍼티</title>
+	<style>
+	#hidden{
+		width: 13em;
+			height: 3em;
+	}
+	#visible{
+			width: 400px;
+			height: 400px;
+	}
+	#hidden{
+			overflow: hidden;	
+		}
+	#visible{
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<h3>overflow 프로퍼티</h3>
+	<div>
+		<hr>
+		<p id="hidden">해당 글의 내용이 너무 많아서 해당 영역을 넘어가면 자르도록 하라.</p>
+		다음 사진은 중요한 사진이므로 절대 자르지 않고 스크롤로 내리도록 하라.<br>
+		<div id="visible">
+		<img src="img/cat.png" width=500px height=500px alt="고양이 사진"></div>
+	</div>
+</body>
+</html>

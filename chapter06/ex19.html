@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>do-while문</title>
+</head>
+<body>
+	<h3>do-while문으로 0에서 n까지의 합</h3>
+	<hr>
+	<script>
+		var n=prompt("숫자를 입력하세요","");
+		n=parseInt(n);
+		var i=0;
+		var sum=0;
+		do{
+			sum+=i;
+			i++
+		}
+		while(i<=n);
+		document.write("0에서"+n+"까지의 합은"+sum);
+	</script>
+</body>
+</html>

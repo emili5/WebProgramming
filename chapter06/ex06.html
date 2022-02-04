@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>자바스크립트 코드 다이얼로그</title>
+</head>
+<body>
+	<script>
+		var a=prompt("이름이 뭐죠?", "예)홍길동");
+		if( a==null){ /*다이얼로그 강제 종료*/
+			document.write("강제종료하지 마세요!");
+		}
+		else if(a==""){
+			document.write("반드시 값을 입력해주세요!");
+		}
+		else{
+			document.write("당신의 이름은 "+a+"입니다.");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>switch</title>
+</head>
+<body>
+	<h3>switch문으로 커피 주문하기</h3>
+	<script>
+		var num=prompt("1.아메리카노 2.카페라떼 3.바닐라라떼 4.카라멜마끼야또\n메뉴를 선택해주세요","");
+		var price=0;
+		switch(num){
+			case 1:
+			price=1000;
+			break;
+			case 2:
+			price=2000;
+			break;
+			case 3:
+			price=2500;
+			break;
+			default:
+			price=2500;
+		}
+		document.write("가격은"+price+"입니다");
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>표 꾸미기</title>
+	<style>
+		table{			
+			border-collapse: collapse;
+		}
+		td, th{			
+			text-align: center;
+			width: 100px;
+			height: 20px;
+			padding: 10px;
+		}
+		thead{
+			background-color: lightgray;
+			color: yellow;
+		}
+		td{
+			border-bottom: 1px solid dimgray;
+		}
+		tr:nth-child(even){
+			background-color: aliceblue;
+		}
+		tr:hover{
+			background: hotpink;
+		}
+		tfoot th{
+			background-color: lightyellow;
+			border-style: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h3>2021년 2학기 성적</h3>
+	<table>
+		<thead>
+			<tr><th>이름</th><th>과목A</th><th>과목B</th></tr>
+		</thead>
+		<tfoot>
+			<tr><th>합</th><th>130</th><th>160</th></tr>
+		</tfoot>
+		<tbody>
+			<tr><td>안정민</td><td>90</td><td>100</td></tr>
+			<tr><td>최기준</td><td>40</td><td>60</td></tr>
+		</tbody>
+	</table>
+</body>
+</html>
